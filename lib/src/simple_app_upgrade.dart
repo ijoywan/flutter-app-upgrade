@@ -264,12 +264,13 @@ class _SimpleAppUpgradeWidget extends State<SimpleAppUpgradeWidget> {
         Theme.of(context).primaryColor
       ];
     }
+    List<Color> okBackgroundColors = _okBackgroundColors!;
     return Ink(
       decoration: BoxDecoration(
           gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
-              colors: [_okBackgroundColors![0], _okBackgroundColors![1]]),
+              colors: [okBackgroundColors[0], okBackgroundColors[1]]),
           borderRadius: borderRadius),
       child: InkWell(
         borderRadius: borderRadius,
