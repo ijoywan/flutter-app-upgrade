@@ -94,7 +94,7 @@ class _LinearPainter extends CustomPainter {
     canvas.drawRRect(
         RRect.fromRectAndRadius(
           Rect.fromLTWH(0, 0, size.width, size.height),
-          Radius.circular(radius ?? 0),
+          Radius.circular(radius),
         ),
         paint);
   }
@@ -124,12 +124,12 @@ class _LinearBorderPainter extends CustomPainter {
       ..color = color!
       ..style = PaintingStyle.stroke
       ..strokeWidth = width!;
-    final alteredRadius = radius ?? 0;
+    final alteredRadius = radius;
     canvas.drawRRect(
         RRect.fromRectAndRadius(
           Rect.fromLTWH(
               width! / 2, width! / 2, size.width - width!, size.height - width!),
-          Radius.circular(alteredRadius - width! ?? 0),
+          Radius.circular(alteredRadius - width!),
         ),
         paint);
   }
@@ -152,7 +152,7 @@ class _LinearClipper extends CustomClipper<Path> {
       ..addRRect(
         RRect.fromRectAndRadius(
           Rect.fromLTWH(0, 0, size.width, size.height),
-          Radius.circular(radius ?? 0),
+          Radius.circular(radius),
         ),
       );
     return path;

@@ -174,7 +174,7 @@ class _SimpleAppUpgradeWidget extends State<SimpleAppUpgradeWidget> {
   _buildTitle() {
     return Padding(
         padding: EdgeInsets.only(top: 20, bottom: 30),
-        child: Text(widget.title ?? '',
+        child: Text(widget.title,
             style: widget.titleStyle ?? TextStyle(fontSize: 22)));
   }
 
@@ -256,7 +256,7 @@ class _SimpleAppUpgradeWidget extends State<SimpleAppUpgradeWidget> {
           bottomRight: Radius.circular(widget.borderRadius),
           bottomLeft: Radius.circular(widget.borderRadius));
     }
-    var _okBackgroundColors = widget.okBackgroundColors;
+    List<Color>? _okBackgroundColors = widget.okBackgroundColors;
     if (widget.okBackgroundColors == null ||
         widget.okBackgroundColors!.length != 2) {
       _okBackgroundColors = [
