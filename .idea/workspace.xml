@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0974fa11-911c-442c-960b-63d7b5e67911" name="默认" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/simple_app_upgrade.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/simple_app_upgrade.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1631255343694</updated>
       <workItem from="1631255347076" duration="307000" />
-      <workItem from="1648285925184" duration="2595000" />
+      <workItem from="1648285925184" duration="3088000" />
     </task>
     <servers />
   </component>
