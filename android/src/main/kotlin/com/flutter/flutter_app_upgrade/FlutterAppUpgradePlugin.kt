@@ -60,7 +60,6 @@ public class FlutterAppUpgradePlugin : FlutterPlugin, MethodCallHandler, Activit
       getAppInfo(mContext, result)
     } else if (call.method == "getApkDownloadPath") {
       result.success(mContext.getExternalFilesDir("")!!.absolutePath)
-//      result.success(mContext.getExternalFilesDir("").absolutePath)
     } else if (call.method == "install") {
       //安装app
       val path = call.argument<String>("path")
